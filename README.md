@@ -45,7 +45,7 @@ python v3.7
 
 pip3 install pandas  
 pip3 install lxml  
-pip3 install html5lib
+pip3 install html5lib  
 pip3 install yfinance
 
 

@@ -6,15 +6,15 @@ test/__pycache__
 test/__pycache__/*.pyc
 
 # Log Files #
-logs/
+logs/*
 !logs/.gitkeep
 
 # Files Contains Private Data #
-backup/
+backup/*
 !backup/.gitkeep
-databases/
+databases/*
 !databases/.gitkeep
-snapshots/
+snapshots/*
 !snapshots/.gitkeep
 
 # Environment #
@@ -30,4 +30,3 @@ ENV/
 !.vscode/tasks.json 
 !.vscode/launch.json 
 !.vscode/extensions.json 
-.history
