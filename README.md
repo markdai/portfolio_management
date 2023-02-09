@@ -1,41 +1,40 @@
 # Portfolio Management
 
-Python package to manage Equity and Fixed Income transactions, as well as generating portfolio allocation report.
+portfolio_management offers a tool to keep track of Equity and Fixed Income transactions; it can also generate portfolio allocation reports.
 
 ## Getting Started
 
 * `src/` contains all basic modules for this package.
-	* `logger.py` the logger constructor;
-	* `financial_API_utility.py` the Yahoo Finance API connector
-	* `eq_SQLite_utility.py` the SQLite connector for Equity
-	* `fixed_SQLite_utility.py`  the SQLite connector for Fixed Income
-	* `equity.py` the management module for Equity
-	* `fixed_income.py` the management module for Fixed Income
-	* `overview_generator.py` the generator for Allocation Reports
+    * `logger.py` the logger constructor;
+    * `financial_API_utility.py` the Yahoo Finance API connector;
+    * `eq_SQLite_utility.py` the SQLite connector for Equity;
+    * `fixed_SQLite_utility.py`  the SQLite connector for Fixed Income;
+    * `equity.py` the management module for Equity;
+    * `fixed_income.py` the management module for Fixed Income;
+    * `overview_generator.py` the generator for Allocation Reports;
 * `test/` contains UnitTest for some basic modules.
-	* `test_financial_API_utility.py` unittest for src/financial_API_utility.py
-	* `test_eq_SQLite_utility.py` unittest for src/eq_SQLite_utility.py
-	* `test_fixed_SQLite_utility.py` unittest for src/fixed_SQLite_utility.py
-	* `test_equity.py` unittest for src/equity.py
-	* `test_fixed_income.py` unittest for src/fixed_income.py
-	* `test_overview_generator.py` unittest for src/overview_generator.py
+    * `test_financial_API_utility.py` unittest for src/financial_API_utility.py;
+    * `test_eq_SQLite_utility.py` unittest for src/eq_SQLite_utility.py;
+    * `test_fixed_SQLite_utility.py` unittest for src/fixed_SQLite_utility.py;
+    * `test_equity.py` unittest for src/equity.py;
+    * `test_fixed_income.py` unittest for src/fixed_income.py
+    * `test_overview_generator.py` unittest for src/overview_generator.py;
 * `templates/` contains SQLite Table Schema and View Query.
-	* `equity_tables_schema.json` Table schema for all tables in Equity database
-	* `fixed_tables_schema.json` Table schema for all tables in Fixed Income database
-	* `equity_positions_view_query.sql` VIEW query for "position" in Equity database 
-	* `fixed_positions_view_query.sql` VIEW query for "position" in Fixed Income database
+    * `equity_tables_schema.json` Table schema for all tables in the equity database;
+    * `fixed_tables_schema.json` Table schema for all tables in the fixed income database;
+    * `equity_positions_view_query.sql` View query for "position" in the equity database; 
+    * `fixed_positions_view_query.sql` View query for "position" in the fixed Income database;
 * `databases/` contains SQLite database instances.
-	* `equity.db` SQLite database file for Equity holdings
-	* `fixed_income.db` SQLite database file for Fixed Income holdings
-	* `others.json` JSON file for Cash Equivalent and Mutual Fund holdings
+    * `Equity.db` SQLite database file for Equity holdings;
+    * `fixed_income.db` SQLite database file for Fixed Income holdings;
+    * `others.json` JSON file for Cash Equivalent and Mutual Fund holdings;
 * `backup/` contains backup for :table: transaction in comma delimited CSV format.
-	* equity_transaction_backup_YYYYMMDD.csv
-	* fixed_transaction_backup_YYYYMMDD.csv
+    * equity_transaction_backup_YYYYMMDD.csv;
+    * fixed_transaction_backup_YYYYMMDD.csv;
 * `logs/` contains execution logs.
-* `snapshots/` contains investment overview snapshot.
-	* snapshot_YYYYMMDD.html
+* `snapshots/` contains investment overview snapshots.
+    * snapshot_YYYYMMDD.html;
 * `main.py` it is the master script for this package.
-
 
 ## Prerequisites
 
@@ -47,7 +46,6 @@ pip3 install pandas
 pip3 install lxml  
 pip3 install html5lib  
 pip3 install yfinance
-
 
 ## How to run
 
