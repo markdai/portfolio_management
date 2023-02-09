@@ -1,0 +1,153 @@
+{"WATCH_LIST":[
+  {
+	"name":"SYMBOL",
+    "type":"text",
+	"mode":"PRIMARY KEY"
+  },{
+    "name":"FULL_NAME",
+    "type":"text",
+    "mode":"NULLABLE"
+  },{
+    "name":"INVESTMENT_TYPE",
+    "type":"text",
+    "mode":"NOT NULL"
+  },{
+    "name":"LAST_UPDATED",
+    "type":"text",
+    "mode":"NOT NULL"
+  },{
+	"name":"PREV_CLOSE",
+    "type":"real",
+	"mode":"NULLABLE"
+  },{
+	"name":"LOW_52WKS",
+    "type":"real",
+	"mode":"NULLABLE"
+  },{
+	"name":"HIGH_52WKS",
+    "type":"real",
+    "mode":"NULLABLE"
+  },{
+	"name":"MKT_CAP",
+    "type":"text",
+	"mode":"NULLABLE"
+  },{
+	"name":"TOTAL_ASSETS",
+    "type":"text",
+	"mode":"NULLABLE"
+  },{
+	"name":"PE",
+    "type":"real",
+    "mode":"NULLABLE"
+  },{
+	"name":"FORWARD_PE",
+    "type":"real",
+    "mode":"NULLABLE"
+  },{
+	"name":"DIV",
+    "type":"real",
+	"mode":"NULLABLE"
+  },{
+	"name":"YIELD",
+    "type":"real",
+	"mode":"NULLABLE"
+  },{
+	"name":"EPS",
+    "type":"real",
+	"mode":"NULLABLE"
+  },{
+	"name":"FORWARD_EPS",
+    "type":"real",
+	"mode":"NULLABLE"
+  },{
+	"name":"BETA",
+    "type":"real",
+	"mode":"NULLABLE"
+  },{
+	"name":"SHORT_FLOAT",
+    "type":"real",
+	"mode":"NULLABLE"
+  },{
+	"name":"SECTOR",
+    "type":"text",
+	"mode":"NULLABLE"
+  },{
+	"name":"CATEGORY",
+    "type":"text",
+	"mode":"NULLABLE"
+  },{
+	"name":"ENABLED",
+    "type":"boolean",
+	"mode":"NOT NULL"
+  }
+],
+"TRANSACTIONS":[
+  {
+	"name":"ID",
+    "type":"integer",
+	"mode":"PRIMARY KEY"
+  },{
+	"name":"SYMBOL",
+    "type":"text",
+	"mode":"NOT NULL"
+  },{
+	"name":"TYPE",
+    "type":"text",
+	"mode":"NOT NULL"
+  },{
+	"name":"DATE",
+    "type":"text",
+    "mode":"NOT NULL"
+  },{
+	"name":"DOLLARS",
+    "type":"real",
+	"mode":"NOT NULL"
+  },{
+	"name":"UNITS",
+    "type":"integer",
+    "mode":"NOT NULL"
+  },{
+	"name":"INVESTMENT_TYPE",
+    "type":"text",
+	"mode":"NOT NULL"
+  },{
+	"name":"DESCRIPTION",
+    "type":"text",
+	"mode":"NULLABLE"
+  },{
+	"name":"ACCOUNT",
+    "type":"text",
+	"mode":"NOT NULL"
+  },{
+	"name":"TOTAL_DOLLARS",
+    "type":"real",
+	"mode":"NOT NULL"
+  },{
+	"name":"TOTAL_GAIN",
+    "type":"real",
+	"mode":"NULLABLE"
+  }
+],
+"TMP_HOLDINGS":[
+  {
+	"name":"SYMBOL",
+    "type":"text",
+	"mode":"NOT NULL"
+  },{
+    "name":"DESCRIPTION",
+    "type":"text",
+    "mode":"NOT NULL"
+  },{
+	"name":"INVESTMENT_TYPE",
+    "type":"text",
+	"mode":"NOT NULL"
+  },{
+	"name":"UNITS",
+    "type":"integer",
+    "mode":"NOT NULL"
+  },{
+	"name":"COST_DOLLARS",
+    "type":"real",
+	"mode":"NOT NULL"
+  }
+]}

@@ -1,0 +1,55 @@
+{"TRANSACTIONS":[
+  {
+	"name":"ID",
+    "type":"integer",
+	"mode":"PRIMARY KEY"
+  },{
+	"name":"NAME",
+    "type":"text",
+	"mode":"NOT NULL"
+  },{
+	"name":"SYMBOL",
+    "type":"text",
+	"mode":"NULLABLE"
+  },{
+	"name":"INVESTMENT_TYPE",
+    "type":"text",
+	"mode":"NOT NULL"
+  },{
+	"name":"UNITS",
+    "type":"integer",
+    "mode":"NOT NULL"
+  },{
+	"name":"FACE_VALUE",
+    "type":"real",
+	"mode":"NOT NULL"
+  },{
+	"name":"TOTAL_DOLLARS",
+    "type":"real",
+	"mode":"NOT NULL"
+  },{
+	"name":"ADD_DATE",
+    "type":"text",
+    "mode":"NOT NULL"
+  },{
+	"name":"END_DATE",
+    "type":"text",
+	"mode":"NOT NULL"
+  },{
+	"name":"TOTAL_COST",
+    "type":"real",
+	"mode":"NOT NULL"
+  },{
+	"name":"APR",
+    "type":"real",
+	"mode":"NOT NULL"
+  },{
+	"name":"YTM",
+    "type":"real",
+	"mode":"NOT NULL"
+  },{
+	"name":"ACCOUNT",
+    "type":"text",
+	"mode":"NOT NULL"
+  }
+]}
