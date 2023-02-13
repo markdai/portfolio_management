@@ -491,8 +491,8 @@ class SQLiteRequest(object):
             raise IOError("6th :argument: v_high_52wks should be a float. Got {}: {}".format(
                 str(type(v_high_52wks)), str(v_high_52wks))
             )
-        if not isinstance(v_mkt_cap, int):
-            raise IOError("7th :argument: v_mkt_cap should be an integer. Got {}: {}".format(
+        if not isinstance(v_mkt_cap, int) and not isinstance(v_mkt_cap, float):
+            raise IOError("7th :argument: v_mkt_cap should be an integer or float. Got {}: {}".format(
                 str(type(v_mkt_cap)), str(v_mkt_cap))
             )
         if not isinstance(v_total_assets, int):
