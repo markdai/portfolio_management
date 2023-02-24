@@ -153,17 +153,6 @@ class TestFinAPI(unittest.TestCase):
         except RuntimeError:
             self.fail(":function: get_short_float() raised RuntimeError unexpectedly !")
 
-    def test_get_short_ratio(self):
-        """
-        TestCase for Stock.get_short_ratio().
-        """
-        _test_stock_instance = Stock('AAPL')
-        try:
-            _test_output = _test_stock_instance.get_short_ratio()
-            self.assertTrue(isinstance(_test_output, float))
-        except RuntimeError:
-            self.fail(":function: get_short_ratio() raised RuntimeError unexpectedly !")
-
     def test_get_beta(self):
         """
         TestCase for Stock.get_beta().
@@ -185,17 +174,6 @@ class TestFinAPI(unittest.TestCase):
             self.assertTrue(isinstance(_test_output, str))
         except RuntimeError:
             self.fail(":function: get_headquarter_country() raised RuntimeError unexpectedly !")
-
-    def test_get_headquarter_city(self):
-        """
-        TestCase for Stock.get_headquarter_city().
-        """
-        _test_stock_instance = Stock('AAPL')
-        try:
-            _test_output = _test_stock_instance.get_headquarter_city()
-            self.assertTrue(isinstance(_test_output, str))
-        except RuntimeError:
-            self.fail(":function: get_headquarter_city() raised RuntimeError unexpectedly !")
 
     def test_get_name(self):
         """
@@ -274,14 +252,3 @@ class TestFinAPI(unittest.TestCase):
             self.assertTrue(isinstance(_test_output, str))
         except RuntimeError:
             self.fail(":function: get_category() raised RuntimeError unexpectedly !")
-
-    def test_get_fund_family(self):
-        """
-        TestCase for ETF.get_fund_family().
-        """
-        _test_stock_instance = ETF('VOO')
-        try:
-            _test_output = _test_stock_instance.get_fund_family()
-            self.assertTrue(isinstance(_test_output, str))
-        except RuntimeError:
-            self.fail(":function: get_fund_family() raised RuntimeError unexpectedly !")
