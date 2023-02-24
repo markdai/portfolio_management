@@ -1,14 +1,14 @@
 """
-This module contains class for Yahoo Finance API requests.
+This module contains class for scraping webpages from Yahoo Finance.
 
     Original Author: Mark D
     Date created: 09/28/2019
-    Date Modified: 01/28/2021
+    Date Modified: 02/24/2023
     Python Version: 3.7
 
 Note:
     This module depend on following third party library:
-     - yfinance v0.1.55+
+     - yfinance v0.2.12
      - pandas v0.25.0
 
 Examples:
@@ -201,21 +201,6 @@ class Stock(object):
         except Exception as e:
             raise e
 
-    def get_short_ratio(self):
-        """
-        The :function: get_short_ratio is used to get short percentage of average daily trade for a stock.
-        """
-        try:
-            that_result = self.this_instance.info['shortRatio']
-            if that_result is None:
-                that_result = float('nan')
-            return that_result
-        except KeyError:
-            that_result = float('nan')
-            return that_result
-        except Exception as e:
-            raise e
-
     def get_beta(self):
         """
         The :function: get_beta is used to get beta ratio for a stock.
@@ -237,21 +222,6 @@ class Stock(object):
         """
         try:
             that_result = self.this_instance.info['state']
-            if that_result is None:
-                that_result = ''
-            return that_result
-        except KeyError:
-            that_result = ''
-            return that_result
-        except Exception as e:
-            raise e
-
-    def get_headquarter_city(self):
-        """
-        The :function: get_headquarter_state is used to get company location (city) for a stock.
-        """
-        try:
-            that_result = self.this_instance.info['city']
             if that_result is None:
                 that_result = ''
             return that_result
@@ -318,21 +288,6 @@ class ETF(Stock):
         """
         try:
             that_result = self.this_instance.info['category']
-            if that_result is None:
-                that_result = ''
-            return that_result
-        except KeyError:
-            that_result = ''
-            return that_result
-        except Exception as e:
-            raise e
-
-    def get_fund_family(self):
-        """
-        The :function: get_fund_family is used to get Fund Family for an ETF.
-        """
-        try:
-            that_result = self.this_instance.info['fundFamily']
             if that_result is None:
                 that_result = ''
             return that_result
