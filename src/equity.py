@@ -50,7 +50,8 @@ import os
 
 from .logger import UseLogging
 from .eq_SQLite_utility import SQLiteRequest
-from .financial_API_utility import Stock, ETF
+# from .financial_API_utility import Stock, ETF
+from .financial_API_utility_alternative import Stock, ETF
 
 
 class DbCommands(object):
